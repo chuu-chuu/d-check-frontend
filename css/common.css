@@ -1,0 +1,35 @@
+:root {
+    --header-height: 80px;
+    --nav-width: 70px;
+    --primary-color: #4FC1E9;
+    --secondary-color: #E5FDFF;
+    --font-color: #344A53;
+    --white-color: #fff;
+    --body-font: 'Roboto', sans-serif;
+    --normal-font-size: 18px;
+    --title-font-size: 24px;
+    --z-fixed: 100;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box
+}
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none!important;
+}
+body {
+    position: relative;
+    /* margin: var(--header-height) 0 0 0;
+    padding: 0 1rem; */
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: .5s;
+    color: var(--font-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
