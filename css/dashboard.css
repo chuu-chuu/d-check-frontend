@@ -1,0 +1,111 @@
+.organization-select .form-select {
+    border: 1px solid var(--font-color);
+    border-radius: 0;
+    padding: 30px 20px;
+    background-color: var(--secondary-color);
+    
+    font-size: 20px;
+    color: var(--font-color);
+}
+.organization-select {
+    margin-bottom: 70px;
+}
+
+.organization-select .form-select::after {
+    content: 'f0d7';
+    position: absolute;
+
+}
+.today-list .checkin-box,
+.today-list .booking-box{
+    width: 50%;
+}
+.checkin-box div,
+.booking-box div {
+    height: 92px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../imgs/dashboard-icon.png');
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center;
+}
+.checkin-box div h5,
+.booking-box div h5 {
+    color: var(--font-color);
+    font-size: 26px;
+   
+}
+.checkin-box div {
+    background-color: #FDE8FD;
+}
+.booking-box div  {
+    background-color: #D0FDE6;
+}
+.latest-list-head {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.latest-list-head a {
+    color: var(--primary-color);
+    transition: .2s;
+}
+.latest-list-head a:hover {
+    color: var(--font-color);
+    transition: .2s;
+}
+.latest-list thead {
+    background: var(--primary-color);
+    color: #fff;
+}
+.latest-list tbody a {
+    background: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: .2s;
+    /* width: 30px; */
+}
+.latest-list tbody a:hover {
+    background-color: var(--font-color);
+    transition: .2s;
+}
+.latest-list tbody tr td {
+    padding: 15px 0;
+}
+.latest-list tbody tr:first-child td {
+    padding-top: 30px;
+}
+.latest-list tbody tr:last-child td {
+    padding-bottom: 30px;
+}
+.latest-list .table>tbody {
+    font-weight: 100;
+}
+
+.latest-list .table {
+     border-bottom: 1px solid var(--primary-color);
+}
+.latest-list .table tr th {
+    padding: 20px 10px;
+}
+
+.latest-list .col-lg-6:first-child h5::before {
+    content: "\f56e";
+}
+.latest-list .col-lg-6:last-child h5::before {
+    content: "\f274";
+}
+
+.latest-list h5::before {
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+    font-size: 46px;
+    top: -13px;
+    opacity: 0.3;
+}
