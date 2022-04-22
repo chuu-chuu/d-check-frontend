@@ -28,6 +28,10 @@
 .btn-check:focus+.btn, .btn:focus, .form-select:focus {
     box-shadow: none!important;
 }
+select:focus-visible,
+input:focus-visible {
+    outline: none;
+}
 body {
     position: relative;
     font-family: var(--body-font);

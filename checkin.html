@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/checkin.css">
+    <link href="fontawesome-css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-css/brands.css" rel="stylesheet">
+    <link href="fontawesome-css/solid.css" rel="stylesheet">
+    <link href="fontawesome-css/all.css" rel="stylesheet">
+    <link href="fontawesome-css/regular.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/data-table.min.css">
+  </head>
+  <body id="body-pd">
+    <header class="header" id="header">
+      
+      <div class="container header-wrap d-flex">
+        <a href="navigation.html" class="nav_logo">
+          <img src="imgs/logo.png" alt="">
+        </a>
+        <div class="toggle-name-wrap d-flex">
+          <div class="header_toggle"> 
+            <i class="fa-solid fa-bars" id="header-toggle"></i>
+          </div>
+          <div class="header-name">
+            <h5>d-Check Admin Console</h5>
+          </div>
+        </div>
+        
+        <div class="header-user">
+          <div class="dropdown">
+              <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                <i class="fa-solid fa-user"></i> 
+                <span class="d-none d-lg-inline">Mathrew</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                <li>
+                    <a href="#" class="dropdown-item"> <i class="fa-solid fa-user-gear"></i>Profile</a>
+                    
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                </li>
+                
+              </ul>
+            </div>
+        </div>
+      </div>
+      
+        
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> 
+              <div class="nav_list"> 
+                <a href="navigation.html" class="nav_link"> 
+                    <i class="fa-solid fa-cubes"></i>
+                    <span class="nav_name">Dashboard</span> 
+                </a>
+                <a href="checkin.html" class="nav_link active"> 
+                    <i class="fa-solid fa-file-import"></i>
+                    <span class="nav_name">Checkin</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="nav_name">Booking</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                  <i class="fa-solid fa-list-check"></i>
+                  <span class="nav_name">Today Booking</span> 
+                </a>
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-file-shield"></i> 
+                    <span class="nav_name">Booking Policy</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span class="nav_name">Location QR</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span class="nav_name">Audit</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="nav_name">Setting</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span class="nav_name">Get Help ?</span> 
+                </a> 
+              </div>
+            </div> 
+        </nav>
+    </div>
+    <!-- Data Table -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 latest-list">
+              <h4 class="main-title">Check In</h4>
+              <table id="checkin-table" class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th>
+                      <input class="thead-checkbox d-flex" type="checkbox" />
+                    </th>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Organization</th>
+                    <th>Location</th>
+                    <th>Subject</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>1</td>
+                    <td>Alexander Smith</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>2</td>
+                    <td>Alexander</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>3</td>
+                    <td>Smith</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>4</td>
+                    <td>Liam</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>5</td>
+                    <td>Elijah</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>6</td>
+                    <td>Noah</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>7</td>
+                    <td>Oliver</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>8</td>
+                    <td>William</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>9</td>
+                    <td>James</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>10</td>
+                    <td>Benjamin</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>11</td>
+                    <td>Alex</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="tbody-checkbox d-flex" type="checkbox" />
+                    </td>
+                    <td>12</td>
+                    <td>Adam</td>
+                    <td>02/22/2022</td>
+                    <td>2:30 PM</td>
+                    <td>Amara Media</td>
+                    <td>Gate 1 Amara-Media</td>
+                    <td>Visit</td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>     
+            </div>
+        </div>
+    </div>
+    
+    <!-- Data Table -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/data-table.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/common.js"></script>
+    
+  </body>
+</html>

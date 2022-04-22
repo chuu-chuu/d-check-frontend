@@ -1,0 +1,14 @@
+/* Checkbox */
+
+/* Checkbox */
+.thead-checkbox,
+.tbody-checkbox {
+    accent-color: var(--font-color);
+    height: 25px; 
+    width: 25px;
+    opacity: 0.9;
+}
+
+
+/* Checkbox */
+
