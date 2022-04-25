@@ -1,14 +1,21 @@
-/* Checkbox */
 
-/* Checkbox */
-.thead-checkbox,
-.tbody-checkbox {
-    accent-color: var(--font-color);
-    height: 25px; 
-    width: 25px;
-    opacity: 0.9;
+.booking-status {
+    font-size: 14px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    display: inline-block;
 }
-
-
-/* Checkbox */
-
+.pending {
+    background: #E7F7B4;
+}
+.approved {
+    background: #ACE4F7;
+}
+.reject {
+    background: #FCC6D0;
+}
+/* Modal Box */
+/* Modal Box */

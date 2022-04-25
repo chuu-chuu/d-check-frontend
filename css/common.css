@@ -47,3 +47,102 @@ a {
     text-decoration: none;
     color: var(--font-color);
 }
+p {
+    margin-bottom: 0;
+}
+.detail-modal .btn-close {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: #03a9f4;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 24px;
+    transition: all .3s ease;
+}
+.detail-modal .btn-close:hover {
+    background: var(--font-color);
+    opacity: 1;
+    transition: all .3s ease;
+}
+.detail-modal .modal-header {
+    justify-content: center!important;
+    margin-bottom: 25px;
+}
+.detail-modal .modal-header .main-title {
+    margin-bottom: 25px;
+}
+.detail-modal .modal-header::after {
+    content: '';
+    width: 700px;
+    position: absolute;
+    border: 1px solid var(--primary-color);
+    bottom: 20px;
+}
+.detail-modal .sub-title i {
+    color: var(--primary-color);
+    transform: rotate(45deg);
+    margin-right: 15px;
+    font-size: 18px;
+}
+.detail-modal .main-title span {
+    color: var(--primary-color);
+}
+.detail-modal .sub-title {
+    font-weight: 400;
+    font-size: 22px;
+}
+.detail-modal .modal-body p {
+    padding-left: 40px;
+    font-weight: 100;
+}
+
+.detail-modal .modal-body p i {
+    margin-right: 10px;
+}
+.detail-modal .modal-content {
+    padding: 20px;
+    border-radius: 20px;
+}
+.detail-modal .modal-body .row {
+    margin-bottom: 45px;
+}
+
+.detail-modal .modal-body .row:last-child {
+    margin-bottom: 0px;
+}
+.checkin-detail-modal .modal-body .row:nth-child(2) .d-flex div,
+.checkin-detail-modal .modal-body .row:nth-child(3) .d-flex div{
+    width: 33.3%;
+}
+.checkin-detail-modal .modal-body .row:nth-child(2) .d-flex,
+.checkin-detail-modal .modal-body .row:nth-child(3) .d-flex,
+.checkin-detail-modal .modal-body .col-lg-6  {
+    margin-bottom: 35px;
+}
+
+/* For scroll bar */
+#style-2 {
+    height: 500px;
+    overflow-y: scroll;
+}
+#style-2::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: var(--white-color);
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: var(--primary-color);
+}
+
+
+

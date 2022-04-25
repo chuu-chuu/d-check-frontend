@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/checkin.css">
+    <link href="fontawesome-css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome-css/brands.css" rel="stylesheet">
+    <link href="fontawesome-css/solid.css" rel="stylesheet">
+    <link href="fontawesome-css/all.css" rel="stylesheet">
+    <link href="fontawesome-css/regular.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/data-table.min.css">
+  </head>
+  <body id="body-pd">
+    <header class="header" id="header">
+      
+      <div class="container header-wrap d-flex">
+        <a href="navigation.html" class="nav_logo">
+          <img src="imgs/logo.png" alt="">
+        </a>
+        <div class="toggle-name-wrap d-flex">
+          <div class="header_toggle"> 
+            <i class="fa-solid fa-bars" id="header-toggle"></i>
+          </div>
+          <div class="header-name">
+            <h5>d-Check Admin Console</h5>
+          </div>
+        </div>
+        
+        <div class="header-user">
+          <div class="dropdown">
+              <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                <i class="fa-solid fa-user"></i> 
+                <span class="d-none d-lg-inline">Mathrew</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                <li>
+                    <a href="#" class="dropdown-item"> <i class="fa-solid fa-user-gear"></i>Profile</a>
+                    
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                </li>
+                
+              </ul>
+            </div>
+        </div>
+      </div>
+      
+        
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> 
+              <div class="nav_list"> 
+                <a href="navigation.html" class="nav_link"> 
+                    <i class="fa-solid fa-cubes"></i>
+                    <span class="nav_name">Dashboard</span> 
+                </a>
+                <a href="checkin.html" class="nav_link"> 
+                    <i class="fa-solid fa-file-import"></i>
+                    <span class="nav_name">Checkin</span> 
+                </a> 
+                <a href="booking.html" class="nav_link active"> 
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span class="nav_name">Booking</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                  <i class="fa-solid fa-list-check"></i>
+                  <span class="nav_name">Today Booking</span> 
+                </a>
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-file-shield"></i> 
+                    <span class="nav_name">Booking Policy</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span class="nav_name">Location QR</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span class="nav_name">Audit</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="nav_name">Setting</span> 
+                </a> 
+                <a href="#" class="nav_link"> 
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span class="nav_name">Get Help ?</span> 
+                </a> 
+              </div>
+            </div> 
+        </nav>
+    </div>
+    <!-- Data Table -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 latest-list">
+              <h4 class="main-title">Booking</h4>
+              <table id="checkin-table" class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Organization</th>
+                    <th>Subject</th>
+                    <th>Action</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Smith</td>
+                    <td>091234569780</td>
+                    <td>02/02/2022</td>
+                    <td>09:30 AM</td>
+                    <td>Amara Media</td>
+                    <td>Visit</td>
+                    <td><span class="booking-status pending">pending</span></td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>091234569780</td>
+                    <td>02/02/2022</td>
+                    <td>09:30 AM</td>
+                    <td>Amara Media</td>
+                    <td>Visit</td>
+                    <td><span class="booking-status reject">reject</span></td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Alexander Smith</td>
+                    <td>091234569780</td>
+                    <td>02/02/2022</td>
+                    <td>09:30 AM</td>
+                    <td>Amara Media</td>
+                    <td>Visit</td>
+                    <td><span class="booking-status approved">approved</span></td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Bill</td>
+                    <td>091234569780</td>
+                    <td>02/02/2022</td>
+                    <td>09:30 AM</td>
+                    <td>Amara Media</td>
+                    <td>Visit</td>
+                    <td><span class="booking-status approved">approved</span></td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Bill</td>
+                    <td>091234569780</td>
+                    <td>02/02/2022</td>
+                    <td>09:30 AM</td>
+                    <td>Amara Media</td>
+                    <td>Visit</td>
+                    <td><span class="booking-status reject">reject</span></td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Jack</td>
+                    <td>091234569780</td>
+                    <td>02/02/2022</td>
+                    <td>09:30 AM</td>
+                    <td>Amara Media</td>
+                    <td>Visit</td>
+                    <td><span class="booking-status approved">approved</span></td>
+                    <td>
+                      <a href="#">Detail</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>     
+            </div>
+        </div>
+    </div>
+    
+    <!-- Data Table -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/data-table.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/common.js"></script>
+    
+  </body>
+</html>

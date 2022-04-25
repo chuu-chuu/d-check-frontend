@@ -99,7 +99,7 @@ table.dataTable thead .sorting {
     background-image: url("../imgs/sort_both.png");
     text-align: center;
 }
-table.dataTable thead .sorting:first-child,
+
 table.dataTable thead .sorting:last-child {
     background-image: none!important;
 }

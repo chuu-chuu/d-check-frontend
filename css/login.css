@@ -1,0 +1,116 @@
+
+.login {
+    margin-top: -110px!important;
+}
+.logo {
+    width: 170px;
+    height: 170px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -90px;
+  }
+  .login-input-container {
+    padding-bottom: 80px;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .label {
+    font-weight: 500;
+  }
+  .main-btn {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .username,
+  .password {
+    width: 520px;
+    max-width: 100%;
+  }
+  .username,
+  .username label,
+  .password  label {
+    margin-bottom: 15px;
+  }
+  .password {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .password i.fa.fa-eye {
+    position: absolute;
+    right: 20px;
+    top: 65%;
+  }
+  .password .fa-eye-slash {
+    position: absolute;
+    right: 20px;
+    top: 65%;
+  }
+  .sub-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .form-control {
+    border: 1px solid var(--font-color)!important;
+    background: transparent!important;
+    height: 65px;
+    border-radius: 0;
+    
+  }
+  .form-control::placeholder {
+    font-size: 18px;
+    font-weight: 100;
+    color: var(--font-color)!important;
+  }
+  .login-input-container {
+    box-shadow: #D5D5D5 3px 3px 25px;
+    width: 700px;
+    max-width: 100%;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+
+
+
+.main-btn {
+  background: var(--primary-color);
+  border-radius: 10px;
+  color: var(--white-color);
+  transition: all .3s;
+}
+.main-btn:hover {
+    background: var(--font-color);
+    transition: all 1s ease;
+    color: var(--white-color);
+}
+button {
+    border: none;
+}
+input:focus { 
+  outline: none !important;
+  box-shadow: none!important;
+}
+p {
+  margin-bottom: 0!important;
+}
+.errorMsg {
+  background: #B01016;
+  color: var(--white-color);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
