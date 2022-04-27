@@ -19,7 +19,9 @@
     font-size: 24px;
     margin-bottom: 30px;
 }
-
+.modal-open .modal {
+    overflow-y: hidden;
+}
 *,
 ::before,
 ::after {
@@ -29,8 +31,12 @@
     box-shadow: none!important;
 }
 select:focus-visible,
-input:focus-visible {
+input:focus-visible,
+.input-group>.form-control:focus, 
+.input-group>.form-select:focus {
     outline: none;
+    box-shadow: none!important;
+
 }
 body {
     position: relative;
@@ -96,9 +102,11 @@ p {
 }
 .detail-modal .sub-title {
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 500;
 }
-.detail-modal .modal-body p {
+.detail-modal .modal-body p,
+.booking-detail-modal .modal-body .input-group  {
     padding-left: 40px;
     font-weight: 100;
 }
@@ -123,6 +131,7 @@ p {
 }
 .checkin-detail-modal .modal-body .row:nth-child(2) .d-flex,
 .checkin-detail-modal .modal-body .row:nth-child(3) .d-flex,
+.booking-detail-modal .modal-body .row:nth-child(4) .d-flex,
 .checkin-detail-modal .modal-body .col-lg-6  {
     margin-bottom: 35px;
 }
@@ -143,6 +152,23 @@ p {
 	border-radius: 10px;
 	background-color: var(--primary-color);
 }
+.booking-detail-modal .sub-title span:nth-of-type(1) {
+    color: #B01016;
+}
+.booking-detail-modal .sub-title span:nth-of-type(2) {
+    color: var(--primary-color);
+}
+.booking-detail-modal .modal-body .input-group input {
+    max-width: 320px;
+    border: 1px solid var(--font-color);
+    height: 50px;
+    border-radius: 0;
+}
 
-
-
+.booking-detail-modal .modal-body .input-group button {
+    background: var(--font-color);
+    border: none;
+    width: 100px;
+    margin-left: 20px!important;
+    color: var(--white-color);
+}
